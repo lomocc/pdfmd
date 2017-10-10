@@ -13,7 +13,6 @@ program
   .allowUnknownOption()
   .option('-i, --inputDir [value]', 'markdown 目录')
   .option('-o, --outputDir [value]', '输出目录')
-  // .command('convert [filePath]', 'convert .md to .pdf')
   .parse(process.argv);
 
 (async() => {

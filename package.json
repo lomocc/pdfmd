@@ -2,7 +2,7 @@
   "name": "pdfmd",
   "version": "1.0.0",
   "bin": {
-    "pdfmd": "./index"
+    "pdfmd": "./index.js"
   },
   "dependencies": {
     "commander": "^2.11.0",

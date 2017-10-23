@@ -11,9 +11,9 @@ console.log('pdfmd@', version);
 program
   .version('0.1.0')
   .allowUnknownOption()
-  .option('-i, --inputDir [value]', 'markdown 目录')
-  .option('-o, --outputDir [value]', '输出目录')
-  .option('-d, --debug', '输出目录')
+  .option('-i, --inputDir [value]', '.md 源文件目录')
+  .option('-o, --outputDir [value]', '.pdf 输出目录')
+  .option('-d, --debug', '是否输出 HTML 文件')
   .parse(process.argv);
 
 (async() => {

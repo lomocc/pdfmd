@@ -13,9 +13,12 @@ program
   .allowUnknownOption()
   .option('-i, --inputDir [value]', 'markdown 目录')
   .option('-o, --outputDir [value]', '输出目录')
+  .option('-d, --debug', '输出目录')
   .parse(process.argv);
 
 (async() => {
-  await pdf(program.inputDir, program.outputDir || program.inputDir);
-  await process.exit();
+  if(program.inputDir){
+    await pdf(program.inputDir, program.outputDir || program.inputDir, program.debug);
+    await process.exit();
+  }
 })();
